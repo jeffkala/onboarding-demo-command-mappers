@@ -2,10 +2,10 @@
 device_onboarding:
   hostname:
     commands:
-      - command: "show version"
-        use_textfsm: true
-        post_processor: "{{ obj[0] | upper }}"
-        jpath: "[*].hostname"
+      command: "show version"
+      use_textfsm: true
+      post_processor: "{{ obj[0] | upper }}"
+      jpath: "[*].hostname"
   serial:
     commands:
       - command: "show version"
